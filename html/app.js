@@ -24,12 +24,10 @@ $(document).on('click', '.save-bindings', function(e){
 
     var keyData = {}
     keyData['F2'] = [$("#command-F2").val(), $("#argument-F2").val()]
-    keyData['F3'] = [$("#command-F3").val(), $("#argument-F3").val()]
     keyData['F5'] = [$("#command-F5").val(), $("#argument-F5").val()]
     keyData['F6'] = [$("#command-F6").val(), $("#argument-F6").val()]
     keyData['F7'] = [$("#command-F7").val(), $("#argument-F7").val()]
     keyData['F9'] = [$("#command-F9").val(), $("#argument-F9").val()]
-    keyData['F10'] = [$("#command-F10").val(), $("#argument-F10").val()]
     
 
     $.post('https://qb-commandbinding/save', JSON.stringify({
